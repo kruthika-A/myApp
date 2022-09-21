@@ -1,0 +1,20 @@
+<p>databinding works!</p>
+<div>
+    <label for="">Username</label>
+</div>
+<div>
+    <input type="text" (keyup)="userData($event)" >
+</div>
+<div>
+    <label for="">Email</label>
+</div>
+<div>
+    <input type="text" [(ngModel)]="userEmail">
+</div>
+<p>{{userEmail}}</p>
+
+<div>
+    <label for="">Password</label>
+    <input type="text"[(ngModel)]="Password"  >
+</div>
+<p>{{Password}}</p>
