@@ -9,6 +9,7 @@ export class DatabindingComponent implements OnInit {
 username:string=''
 userEmail:string=''
 Password:string=''
+isDisable:boolean=false
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +18,7 @@ Password:string=''
     console.log('ssssssshg')
     
   }
-
+  disableBtn(){
+    this.isDisable=true
+  }
 }

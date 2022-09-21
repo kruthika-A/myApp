@@ -18,3 +18,12 @@
     <input type="text"[(ngModel)]="Password"  >
 </div>
 <p>{{Password}}</p>
+<!-- property Binding -->
+<div (click)="disableBtn()">
+    hello
+</div>
+<div>
+    <button [disabled]="isDisable">
+        save
+    </button>
+</div>

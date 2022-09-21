@@ -1,0 +1,14 @@
+<p>binding-task works!</p>
+
+<div>
+    <label for="">username</label>
+</div>
+<div>
+    <input type="text" (keyup)="disabled($event)" [(ngModel)]="userName" >
+</div>
+<p>{{userName}}</p>
+<div>
+    <button [disabled]="isDisable" (click)="clearData()"   >
+        clear
+    </button>
+</div>
